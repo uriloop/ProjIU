@@ -3,13 +3,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation2"
-    app:startDestination="@id/torneigsFragment">
+    app:startDestination="@id/navigation_torneigs">
 
-    <fragment
-        android:id="@+id/navigation_home"
-        android:name="uri.dam.projiu.ui.home.HomeFragment"
-        android:label="@string/title_home"
-        tools:layout="@layout/fragment_home" />
+
 
     <fragment
         android:id="@+id/navigation_dashboard"
@@ -23,7 +19,7 @@
         android:label="@string/title_notifications"
         tools:layout="@layout/fragment_notifications" />
     <fragment
-        android:id="@+id/torneigsFragment"
+        android:id="@+id/navigation_torneigs"
         android:name="uri.dam.projiu.TorneigsFragment"
         android:label="fragment_torneigs"
         tools:layout="@layout/fragment_torneigs" />
