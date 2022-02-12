@@ -24,6 +24,8 @@ public class AppActivity extends AppCompatActivity {
         setContentView(binding.getRoot());
         setSupportActionBar(binding.appBarMain.toolbar);
 
+
+
         BottomNavigationView navView = findViewById(R.id.nav_app_view);
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
