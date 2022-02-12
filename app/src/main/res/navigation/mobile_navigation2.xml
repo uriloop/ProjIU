@@ -8,19 +8,18 @@
 
 
     <fragment
-        android:id="@+id/navigation_dashboard"
-        android:name="uri.dam.projiu.ui.dashboard.DashboardFragment"
-        android:label="@string/title_dashboard"
-        tools:layout="@layout/fragment_dashboard" />
-
-    <fragment
-        android:id="@+id/navigation_notifications"
-        android:name="uri.dam.projiu.ui.notifications.NotificationsFragment"
-        android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_notifications" />
-    <fragment
         android:id="@+id/navigation_torneigs"
         android:name="uri.dam.projiu.TorneigsFragment"
-        android:label="fragment_torneigs"
+        android:label="Torneigs"
         tools:layout="@layout/fragment_torneigs" />
+    <fragment
+        android:id="@+id/navigation_social"
+        android:name="uri.dam.projiu.SocialFragment"
+        android:label="Social"
+        tools:layout="@layout/fragment_social" />
+    <fragment
+        android:id="@+id/navigation_personal"
+        android:name="uri.dam.projiu.PersonalFragment"
+        android:label="Personal"
+        tools:layout="@layout/fragment_personal" />
 </navigation>

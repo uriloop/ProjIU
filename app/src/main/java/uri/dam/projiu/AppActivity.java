@@ -22,7 +22,7 @@ public class AppActivity extends AppCompatActivity {
 
         binding = ActivityAppBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
-        setSupportActionBar(binding.appBarMain.toolbar);
+        setSupportActionBar(binding.appBarMain2.toolbar);
 
 
 
@@ -30,9 +30,9 @@ public class AppActivity extends AppCompatActivity {
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
         AppBarConfiguration appBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.navigation_torneigs, R.id.navigation_dashboard, R.id.navigation_notifications)
+                R.id.navigation_torneigs, R.id.navigation_social, R.id.navigation_personal )
                 .build();
-        NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_activity_app);
+        NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_app);
         NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
         NavigationUI.setupWithNavController(binding.navAppView, navController);
     }

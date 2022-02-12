@@ -3,23 +3,23 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/nav_home">
+    app:startDestination="@id/nav_logIn">
 
     <fragment
-        android:id="@+id/nav_home"
-        android:name="uri.dam.projiu.ui.home.HomeFragment"
-        android:label="@string/menu_home"
-        tools:layout="@layout/fragment_home" />
+        android:id="@+id/nav_logIn"
+        android:name="uri.dam.projiu.LogInFragment"
+        android:label="LogIn"
+        tools:layout="@layout/fragment_log_in" />
+    <fragment
+        android:id="@+id/nav_help"
+        android:name="uri.dam.projiu.HelpFragment"
+        android:label="Help"
+        tools:layout="@layout/fragment_help" />
 
     <fragment
-        android:id="@+id/nav_gallery"
-        android:name="uri.dam.projiu.ui.gallery.GalleryFragment"
-        android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
+        android:id="@+id/nav_exit"
+        android:name="uri.dam.projiu.ExitFragment"
+        android:label="Exit"
+        tools:layout="@layout/fragment_exit" />
 
-    <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="uri.dam.projiu.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
 </navigation>
